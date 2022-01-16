@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.containor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0, 128, 96),rgb(185, 82, 99));
+}
+.containor h1{
+   
+    text-align: center;
+    font-size: 3vw;
+}
+.boxes{
+   display: grid;
+   grid-template-rows: repeat(3,8vw) ;
+   grid-template-columns:repeat(3,8vw);
+   margin: 10vw;
+   background-image: linear-gradient(rgb(65, 162, 241),rgb(224, 26, 214));
+  position: relative;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+    border: 2px solid black;
+}
+.box:hover{
+    background-color: rgb(233, 207, 169);
+    cursor: pointer;
+}
+.br-0{
+    border-right: none;
+}
+.bt-0{
+    border-top: none;
+}
+.bl-0{
+    border-left: none;
+}
+.bb-0{
+    border-bottom: none;
+}
+
+.game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chance{
+    font-size: 4vw;
+    margin: 2vh 0vw;
+    display: block;
+    text-decoration: underline;
+}
+.turnh1{
+    margin: 3vh 0vw;
+}
+.btn{
+    width: 7vw;
+    height: 5vw;
+    font-size: 2.5vw;
+    padding: 0.8w;
+    background: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 2vw;
+
+}
+.btn:hover{
+   background-color: rgb(87, 84, 84);
+}
+.imgwin{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.line{
+    width: 0vw;
+    height: 0.6vw;
+    position: absolute;
+    background: rgb(252, 2, 2);
+    transition: width 1s ease-in-out;
+}
